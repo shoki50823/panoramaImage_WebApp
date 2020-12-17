@@ -1,0 +1,22 @@
+<html>
+ <head>
+  <title>Self Camera</title>
+ </head>
+ <body>
+   <video id="myVideo" width="400" height="300" autoplay="1" ></video>
+
+   <script type="text/javascript">
+    var video = document.getElementById("myVideo"); // 適当にvideoタグのオブジェクトを取得
+      var constrains = { video: true, audio: true }; // 映像・音声を取得するかの設定
+      navigator.mediaDevices
+        .getUserMedia(constrains)
+        .then(function(stream) {
+          video.srcObject = stream; // streamはユーザーのカメラとマイクの情報で、これをvideoの入力ソースにする
+          video.play();
+        })
+        .catch(function(err) {
+          console.log("An error occured! " + err);
+        });
+   </script>
+ </body>
+</html>
