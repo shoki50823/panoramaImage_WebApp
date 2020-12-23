@@ -131,6 +131,7 @@
       vidElem.style.display = "block";
       takeBtnElem.style.display = "inline";
       takenImgElem.style.display = "none";
+      createBtnElem.style.display = "inline";
       sendBtnElem.style.display = "none";
       cancelBtnElem.style.display = "none";
     }

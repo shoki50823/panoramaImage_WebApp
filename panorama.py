@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 import copy
 
+
 class Image:
     def __init__(self,name,img):
         def calculate(self):
@@ -338,15 +339,6 @@ def make_panorama(original1,original2):
 
 
 def panorama_main(image_names, result_path):
-    # cmdで画像のパスを渡す
-    # 設計変数が少なかったら渡し方の説明
-    # if len(image_names) == 1:
-    #     print("usage: python3 panorama_main.py image1 image2 image3 ...")
-    #     exit()
-
-    # if len(image_names) == 2:
-    #     print("usage: Please give 2 or more images to this program.")
-    #     exit()
 
     images = []
     panorama = []
@@ -375,6 +367,9 @@ def panorama_main(image_names, result_path):
         panorama.append(Image(str(i + 1), make_panorama(panorama[i], images[i + 1])))
         # cv2.imwrite("panorama"+str(i)+".png",panorama[-1].image)
 
+    # 生成したパノラマ画像を保存
     print("A panorama image is generated.")
-    result_panorama = str(result_path) + '/panorama.jpg'
-    cv2.imwrite(str(result_panorama), panorama[-1].image)
+    cv2.imwrite(str(result_path), panorama[-1].image)
+
+
+    

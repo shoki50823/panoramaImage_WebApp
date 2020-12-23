@@ -39,7 +39,7 @@
 
   <script>
     var resultImgElem = document.getElementById("result-img");
-    var timeout = 45;  // タイムアウト秒数
+    var timeout = 30;  // タイムアウト秒数
     var waitingTime = 0;
 
     function isResultExists(resultId) {
