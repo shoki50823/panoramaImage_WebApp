@@ -44,5 +44,5 @@ $ openssl x509 -days 365 -req -signkey server.key < server.csr > server.crt
 4. 複数枚写真をとったらボタンを押してパノラマ画像を生成し処理結果の画像を表示
 
 ## 備考
-WindowsではChrome，Macではsafariで動作確認済み
+WindowsではChrome，Macではsafariで動作確認済み．
 スマホのブラウザでアクセスする場合，カメラのプレビュー画面が表示されない．原因は不明．
