@@ -1,5 +1,5 @@
 
-# anoramaImage_WebApp
+# panoramaImage_WebApp
 カメラで撮影した画像でパノラマ画像を生成するWEBアプリの試作
 
 
